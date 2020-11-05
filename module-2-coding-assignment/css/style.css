@@ -1,26 +1,31 @@
 /** **/
 
 * { 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .title {
     font-size: 175%;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .section-title {
-    clear: left right;
     position: relative;
-    padding: 1px;
+    padding: 0px;
     margin: 0px;
     float: right;
     font-size: 125%;
     background-color: dimgray;
-    border: 1px solid black;
+    border: 0px solid black;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 span {
-    padding: 2px 5px 2px 5px;
+    padding: 0px 5px 2px 5px;
 }
 .span-1 {
     color: black;
@@ -45,11 +50,12 @@ span {
 @media (min-width: 992px) {
     .col-lg-4 {
         float: left;
-        margin: 15px;
-        padding: 0px 15px 15px 15px;
+        margin: 15px 0 50px 15px;
+        padding: 0px 0px 15px 0px;
         border: 1px solid black;
-        width: 30.00%;
+        width: 31.33%;
         background-color: dimgray;
+        position: relative;
     }
 }
 
@@ -57,11 +63,21 @@ span {
 @media (min-width: 768px) and (max-width: 991.98px) {
     .col-md-6 {
         float: left;
-        margin: 15px 15px 0px 15px;
-        padding: 0px 15px 15px 15px;
+        margin: 15px 5px 50px 15px;
+        padding: 0px 5px 15px 15px;
         border: 1px solid black;
-        width: 45.00%;
+        width: 47.00%;
         background-color: dimgray;
+        position: relative;
+    }
+    .col-md-12 {
+        float: left;
+        margin: 15px 5px 50px 15px;
+        padding: 0px 5px 15px 15px;
+        border: 1px solid black;
+        width: 95.00%;
+        background-color: dimgray;
+        position: relative;
     }
 }
 
@@ -69,10 +85,11 @@ span {
 @media (max-width: 767.98px) {
     .col-sm-12 {
         float: left;
-        margin: 15px 15px 0px 15px;
-        padding: 0px 15px 15px 15px;
+        margin: 15px 25px 50px 15px;
+        padding: 0px 5px 15px 15px;
         border: 1px solid black;
-        width: 95.00%;
+        width: 92.00%;
         background-color: dimgray;
+        position: relative;
     }
 }
