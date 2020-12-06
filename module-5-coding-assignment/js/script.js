@@ -96,6 +96,9 @@ dc.loadMenuCategories = function () {
 // Load the menu items view
 // 'categoryShort' is a short_name for a category
 dc.loadMenuItems = function (categoryShort) {
+  var arr = ['A', 'B', 'C', 'CM', 'CSR', 'CU', 'D', 'DK', 'DS', 'F', 'FR', 'FY', 'L', 'NF', 'NL', 'NS', 'PF', 'SO', 'SP', 'SR', 'SS', 'T', 'V', 'VG', ];
+  var random = Math.floor(Math.random() * Math.floor(24));
+  categoryShort = arr[random]
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     menuItemsUrl + categoryShort,
